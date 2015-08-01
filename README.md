@@ -10,7 +10,7 @@ Bash script which opens up the default browser to a random fullscreen gif on htt
 
 ## Installs ##
 
-There are two methods which check if Homebrew and pq are installed and installs them if they are missing.
+There are two methods which check if Homebrew and jq are installed and installs them if they are missing.
 
 `check_install_homebrew_mac`
 - Installs Homebrew Mac OSX package manager

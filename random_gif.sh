@@ -15,7 +15,7 @@ function check_install_homebrew_mac {
 function check_install_jq {
   log "Checking/Installing jq"
   if [ "$(find /usr/local/Cellar/jq)" == "" ]; then
-    log "Installing pq with Homebrew"
+    log "Installing jq with Homebrew"
     brew install jq
   else
     log "jq is already installed"

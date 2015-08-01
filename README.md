@@ -15,7 +15,7 @@ There are two methods which check if Homebrew and pq are installed and installs 
 `check_install_homebrew_mac`
 - Installs Homebrew Mac OSX package manager
 
-`install_jq`
+`check_install_jq`
 - Installs jq command line JSON parser
 
 ## Running the script ##

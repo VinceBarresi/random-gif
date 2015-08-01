@@ -12,7 +12,8 @@ function check_install_homebrew_mac {
   fi;
 }
 
-function install_jq {
+function check_install_jq {
+  log "Checking/Installing jq"
   if [ "$(find /usr/local/Cellar/jq)" == "" ]; then
     log "Installing pq with Homebrew"
     brew install jq
@@ -24,10 +25,10 @@ function install_jq {
 function get_gif {
     url="http://api.giphy.com/v1/gifs/random?&api_key=dc6zaTOxFJmzC"
     gif=$(curl $url | jq -r '.data.url')
-    export gif=$gif/fullscreen
+    gif=$gif/fullscreen
     open $gif
 }
 
 check_install_homebrew_mac
-install_jq
+check_install_jq
 get_gif
